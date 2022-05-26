@@ -123,19 +123,19 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 25rem;
+    height: 100%;
     margin: 0 1rem;
 }
 
 .column div,
 .row div {
     width: 5rem;
-    height: 3rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    margin: 1rem;
+    margin: 0.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
 }
@@ -148,16 +148,16 @@ h2 {
 .row {
     display: flex;
     justify-content: flex-end;
+    padding-right: 0.7rem;
 }
 
-.math,
-.bracket {
+.math {
     background-color: var(--button-math);
 }
 
 #equal {
     border-radius: 0.5rem;
-    height: 8rem;
+    height: 9rem;
     font-size: 2rem;
     background-color: var(--button-math);
 }
@@ -170,10 +170,13 @@ h2 {
     background-color: var(--button-numbers);
 }
 
-.clear {
+#clear {
+    width: 6rem;
     background-color: orangered;
 }
 
-.clear-most-recent {
+#clear-most-recent {
+    margin-right: 0.4rem;
+    width: 6rem;
     background-color: orange;
 }
