@@ -47,11 +47,16 @@ class Calculator {
             this.secondValue = num / 100;
         }
 
+
     };
     selectedOperation(operation) {
+            if (this.secondValue.length > 2 && this.secondValue.includes("√")) {
+                const sRoot = this.secondValue.replace("√", "");
+                this.secondValue = Math.sqrt(sRoot);
+                console.log(this.secondValue);
+            }
             if (operation === " ") return;
             this.operation = operation;
-            console.log(this.secondValue);
             if (this.forDisplay[this.forDisplay.length - 1] === this.operation) return;
             if (this.answerVal !== "0") {
                 this.firstValue = this.answerVal;
@@ -67,6 +72,11 @@ class Calculator {
         }
         //behind the scenes calculations
     doCalculations() {
+        if (this.secondValue.length > 2 && this.secondValue.includes("√")) {
+            const sRoot = this.secondValue.replace("√", "");
+            this.secondValue = Math.sqrt(sRoot);
+            console.log(this.secondValue);
+        }
         let result;
         const value1 = parseFloat(this.firstValue);
         const value2 = parseFloat(this.secondValue);
