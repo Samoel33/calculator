@@ -1,0 +1,178 @@
+:root {
+    --text-font-size: 1.8rem;
+    /*COLORS */
+    --body: black;
+    --body-calculator: rgb(7, 36, 97);
+    --lcd: rgb(158, 224, 158);
+    --button-numbers: rgb(50, 129, 190);
+    --button-math: rgb(49, 83, 176);
+    --text-color: white;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--body);
+}
+
+.container {
+    max-width: 114rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: var(--text-color);
+    margin: 1.5rem;
+    text-align: center;
+    border-bottom: 2px double var(--body-calculator);
+}
+
+
+/*CALCULATOR */
+
+.calculator {
+    width: 30rem;
+    background-color: var(--body-calculator);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+h3,
+h2 {
+    color: var(--text-color);
+    padding-left: 0.5rem;
+}
+
+.name #message {
+    font-style: italic;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    color: orange;
+    border-left: 1px solid orangered;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid orangered;
+}
+
+.title span {
+    background-color: var(--button-math);
+    width: 8rem;
+    border-radius: 1rem;
+}
+
+.lcd {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--lcd);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid white;
+}
+
+.answer {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: var(--text-font-size);
+    color: var(--body-calculator);
+}
+
+.calculations {
+    display: flex;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    color: var(--body-calculator);
+    height: 50%;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+}
+
+.column {
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    margin: 0 1rem;
+}
+
+.column div,
+.row div {
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.column div:hover,
+.row div:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.math,
+.bracket {
+    background-color: var(--button-math);
+}
+
+#equal {
+    border-radius: 0.5rem;
+    height: 8rem;
+    font-size: 2rem;
+    background-color: var(--button-math);
+}
+
+.dot {
+    font-size: 3rem;
+}
+
+.number {
+    background-color: var(--button-numbers);
+}
+
+.clear {
+    background-color: orangered;
+}
+
+.clear-most-recent {
+    background-color: orange;
+}
