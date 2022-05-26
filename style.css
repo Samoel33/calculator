@@ -48,7 +48,7 @@ body {
 
 .calculator {
     width: 30rem;
-    height: 100vh;
+    height: 89vh;
     background-color: var(--body-calculator);
     display: flex;
     flex-direction: column;
