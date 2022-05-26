@@ -48,7 +48,7 @@ body {
 
 .calculator {
     width: 30rem;
-    height: 80vh;
+    height: 85vh;
     background-color: var(--body-calculator);
     display: flex;
     flex-direction: column;
@@ -88,7 +88,7 @@ h2 {
 
 .lcd {
     width: 100%;
-    height: 8rem;
+    height: 18rem;
     background-color: var(--lcd);
     border-radius: 1rem;
     display: flex;
@@ -110,26 +110,27 @@ h2 {
     align-self: flex-start;
     font-size: 1.5rem;
     color: var(--body-calculator);
-    height: 50%;
+    height: 2rem;
 }
 
 .button-container {
     width: 100%;
+    height: 100%;
     display: flex;
 }
 
 .column {
-    width: 5rem;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
 }
 
 .column div,
 .row div {
-    width: 5rem;
+    width: 90%;
     height: 4rem;
     display: flex;
     justify-content: center;
@@ -148,7 +149,7 @@ h2 {
 .row {
     display: flex;
     justify-content: flex-end;
-    padding-right: 0.7rem;
+    padding-right: 0.1rem;
 }
 
 .math {
@@ -171,12 +172,12 @@ h2 {
 }
 
 #clear {
-    width: 6rem;
+    width: 8rem;
     background-color: orangered;
 }
 
 #clear-most-recent {
-    margin-right: 0.4rem;
-    width: 6rem;
+    margin-right: 0.2rem;
+    width: 7rem;
     background-color: orange;
 }
