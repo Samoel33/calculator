@@ -130,8 +130,8 @@ h2 {
 
 .column div,
 .row div {
-    width: 90%;
-    height: 4rem;
+    width: 95%;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +158,7 @@ h2 {
 
 #equal {
     border-radius: 0.5rem;
-    height: 9rem;
+    height: 11rem;
     font-size: 2rem;
     background-color: var(--button-math);
 }
@@ -180,4 +180,16 @@ h2 {
     margin-right: 0.2rem;
     width: 7rem;
     background-color: orange;
+}
+
+@media only screem and (max-width:25em) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .calculator {
+        height: 100%;
+        width: 100%;
+    }
 }
